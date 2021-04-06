@@ -49,6 +49,7 @@ export function App() {
         }
       }
       setNextNumber(previousMath.toString())
+      setLastNumbers([])
     }
   }
 
