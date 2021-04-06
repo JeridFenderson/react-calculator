@@ -11,6 +11,8 @@ export function App() {
         lastNumbers[lastNumbers.length - 2] === Number(nextNumber))
     ) {
       setNextNumber(`${event.target.innerText}`)
+    } else if (nextNumber.length > 10) {
+      setNextNumber('0')
     } else {
       setNextNumber(`${nextNumber}${event.target.innerText}`)
     }
